@@ -136,19 +136,19 @@ $Form.controls.AddRange(@($GroupBoxServices,$GroupBoxDHCP,$GroupBoxDNS,$GroupBox
 
 # Création des actions sur les "Boutons" et les "Menus" 
 $BoutonGetServices.Add_Click({
-C:\Scripts_Powershell\ExerciceAUDIT1services.ps1
+C:\git_cub\contextecubsituation11\ExerciceAUDIT1services.ps1
 })
 
 $BoutonGetDHCP.Add_Click({
-C:\Scripts_Powershell\ExerciceAUDIT2dhcp.ps1
+C:\git_cub\contextecubsituation11\ExerciceAUDIT2dhcp.ps1
 })
 
 $BoutonGetDNS.Add_Click({
-C:\Scripts_Powershell\ExerciceAUDIT3dns.ps1
+C:\git_cub\contextecubsituation11\ExerciceAUDIT3dns.ps1
 })
 
 $BoutonGetAD.Add_Click({
-C:\Scripts_Powershell\ExerciceAUDIT4ad.ps1
+C:\git_cub\contextecubsituation11\ExerciceAUDIT4ad.ps1
 })
 
 $MenuFileQuit.Add_Click({
@@ -156,19 +156,19 @@ $Form.Close()
 })
 
 $MenuAuditTousLesServices.Add_Click({
-C:\Scripts_Powershell\ExerciceAUDIT1services.ps1
+C:\git_cub\contextecubsituation11\ExerciceAUDIT1services.ps1
 })
 
 $MenuAuditDHCP.Add_Click({
-C:\Scripts_Powershell\ExerciceAUDIT2dhcp.ps1
+C:\git_cub\contextecubsituation11\ExerciceAUDIT2dhcp.ps1
 })
 
 $MenuAuditDNS.Add_Click({
-C:\Scripts_Powershell\ExerciceAUDIT3dns.ps1
+C:\git_cub\contextecubsituation11\ExerciceAUDIT3dns.ps1
 })
 
 $MenuAuditAD.Add_Click({
-C:\Scripts_Powershell\ExerciceAUDIT4ad.ps1
+C:\git_cub\contextecubsituation11\ExerciceAUDIT4ad.ps1
 })
 
 $Form.ShowDialog()

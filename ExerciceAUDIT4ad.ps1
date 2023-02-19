@@ -11,6 +11,6 @@
 Write-Host "Le fichier auditAD.txt est en création..."
 
 $ADuser = Get-ADUser -Filter *
-$ADuser | Export-Csv C:\ResultatScript\auditAD.csv -Encoding Unicode
-$ADuser | Out-File C:\ResultatScript\auditAD.txt
+$ADuser | Export-Csv C:\git_cub\contextecubsituation11\auditAD.csv -Encoding Unicode
+$ADuser | Out-File C:\git_cub\contextecubsituation11\auditAD.txt
 

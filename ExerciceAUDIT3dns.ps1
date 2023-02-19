@@ -10,16 +10,16 @@
 
 Write-Host "Le fichier auditDNS.txt est en création..."
 
-$scopeDHCP = Get-DnsServerResourceRecord -ZoneName cyres.lan 
+$scopeDHCP = Get-DnsServerResourceRecord -ZoneName local.hongkong.cub.sioplc.fr 
 $date=Get-Date
-        $date | Out-File C:\ResultatScript\auditDNS.txt
-        $scopeDHCP | Out-File C:\ResultatScript\auditDNStemp.txt
-        $ligne = Get-Content -Path C:\ResultatScript\auditDNStemp.txt
-        $scopeDHCP | Export-Csv C:\ResultatScript\auditDNS.csv -Encoding Unicode
-        Add-Content -Path C:\ResultatScript\auditDNS.txt -Value $ligne
+        $date | Out-File C:\git_cub\contextecubsituation11\auditDNS.txt
+        $scopeDHCP | Out-File C:\git_cub\contextecubsituation11\auditDNStemp.txt
+        $ligne = Get-Content -Path C:\git_cub\contextecubsituation11\auditDNStemp.txt
+        $scopeDHCP | Export-Csv C:\git_cub\contextecubsituation11\auditDNS.csv -Encoding Unicode
+        Add-Content -Path C:\git_cub\contextecubsituation11\auditDNS.txt -Value $ligne
         
 
-$MonFichier = Import-Csv C:\ResultatScript\auditDNS.csv -Delimiter ","
+$MonFichier = Import-Csv C:\git_cub\contextecubsituation11\auditDNS.csv -Delimiter ","
 
 foreach ($Ligne in $MonFichier)
 {

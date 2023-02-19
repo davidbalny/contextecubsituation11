@@ -12,14 +12,14 @@ Write-Host "Le fichier auditDHCP.txt est en création..."
 
 $scopeDHCP = Get-DhcpServerv4Scope 
 $date=Get-Date
-        $date | Out-File C:\ResultatScript\auditDHCP.txt
-        $scopeDHCP | Out-File C:\ResultatScript\auditDHCPtemp.txt
-        $ligne = Get-Content -Path C:\ResultatScript\auditDHCPtemp.txt
-        $scopeDHCP | Export-Csv C:\ResultatScript\auditDHCP.csv -Encoding Unicode
-        Add-Content -Path C:\ResultatScript\auditDHCP.txt -Value $ligne
+        $date | Out-File C:\git_cub\contextecubsituation11\auditDHCP.txt
+        $scopeDHCP | Out-File C:\git_cub\contextecubsituation11\auditDHCPtemp.txt
+        $ligne = Get-Content -Path C:\git_cub\contextecubsituation11\auditDHCPtemp.txt
+        $scopeDHCP | Export-Csv C:\git_cub\contextecubsituation11\auditDHCP.csv -Encoding Unicode
+        Add-Content -Path C:\git_cub\contextecubsituation11\auditDHCP.txt -Value $ligne
         
 
-$MonFichier = Import-Csv C:\ResultatScript\auditDHCP.csv -Delimiter ","
+$MonFichier = Import-Csv C:\git_cub\contextecubsituation11\auditDHCP.csv -Delimiter ","
 
 foreach ($Ligne in $MonFichier)
 {
